@@ -1,0 +1,238 @@
+body{
+margin: 15px;
+background: linear-gradient(90deg, rgb(22, 27, 44) 0%, hsla(226, 37%, 23%, 1) 59%, hsla(0, 100%, 0%, 1) 100%);
+color: #ffffff; 
+font-family: Arial, Helvetica, sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-bar{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    /* background-color: #3b82f6; */
+}
+     .nav-section{
+    display: flex;
+    border:2px;
+    background-color: rgb(22, 27, 44);
+    border-radius: 40px;
+     flex-wrap: wrap;
+    height: 40px;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+} 
+.nav-bar a{
+    /* color: rgb(22, 27, 44) ; */
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-btn{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background: rgb(22, 27, 44);
+    transition: transform 1s ease-in-out;
+}
+.nav-name:hover{
+
+    transform: translateY(-1px);
+    transition: 1s;
+}
+.contact-btn{
+    display: inline-block;
+    border: 2px solid rgb(22, 27, 44) ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(22, 27, 44);
+    transition: transform 1s ease-in-out;
+}
+.contact-btn:hover{
+    background-color: #3b82f6;
+    transition: 0.5s; 
+    color:#d1d5db ;
+    transform: translateY(-2px);
+}
+
+.nav-section:hover{
+    transition:0.5 ; 
+    transform: translateY(-5px);
+    background: #ffffff;
+
+}
+.nav-section:hover .a1{
+    color: rgb(22, 27, 44);
+}
+.a1:hover{
+    font-weight: 1000;
+    transform: translateY(-3px);
+    transition: 0.1s;
+}
+.content-sec
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    
+    
+    justify-items: center;
+    
+}
+.poovu-img{
+    padding: 90px;
+    width: 300px;
+    filter:grayscale(1);
+    
+}
+.poovu-img:hover{
+filter: contrast(1);
+transition: 5s;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Resume-btn{
+    align-self: center;
+    display: inline-block;
+    border: 2px solid rgb(22, 27, 44) ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(22, 27, 44);
+    text-decoration: none;
+    color: #ffffff;
+}
+.Resume-btn:hover{
+    background-color: #3b82f6;
+    transition: 0.5s; 
+    color:#d1d5db ;
+    transform: translateY(-2px);   
+}
+h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: #d1d5db;
+}
+p{
+    font-size: 20px;
+    color: #d1d5db;
+}
+.span-name{
+    color: #3b82f6;
+}
+
+.About{
+    
+    display:grid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+   
+}
+
+i{
+    padding: 20px;
+    font-size: 30px;
+    color: #ffffff;
+}
+i:hover{
+    color: #3b82f6;
+}
+.Eduction-sec{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px black;
+    border-style: ridge;
+    box-shadow:0 20px 20px rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+.img-tr img{
+    display: none;
+    padding-bottom: 20px;
+    height: 0px;
+}
+.img-tr:hover img{
+    display:inline-block ;
+    height: 150px;
+    width: 300px;
+    animation: heightChange 1s ease;
+}
+@keyframes heightChange {
+    0%
+    {
+        height: 50px;
+    }
+    10%{
+
+    }
+    20%
+    {
+        height: 70px;
+    }
+    35%
+    {
+        height: 90px;
+    }
+    55%
+    {
+        height: 100px;
+    }
+    
+    75%
+    {
+        height: 125px;
+    }
+    100%{
+        height: 150px;
+    }
+    
+}
+.skill-border{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow:0 20px 20px rgba(0,0,0,0.4);
+    background:rgb(22, 27, 44) ;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.skil-space i{
+    justify-content: space-between;
+    font-size: 50px;
+    padding-right: 50px;
+}
+.skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+.lang{
+    padding-left: 30px;
+    font-weight:600;
+    padding-bottom: 20px;
+}
+.skill{
+    margin-left: 15%;
+}
