@@ -1,4 +1,5 @@
 body{
+display: grid;
 margin: 15px;
 background: linear-gradient(90deg, rgb(22, 27, 44) 0%, hsla(226, 37%, 23%, 1) 59%, hsla(0, 100%, 0%, 1) 100%);
 color: #ffffff; 
@@ -19,6 +20,7 @@ html{
 }
      .nav-section{
     display: flex;
+    flex-direction: row-reverse;
     border:2px;
     background-color: rgb(22, 27, 44);
     border-radius: 40px;
@@ -86,6 +88,7 @@ html{
     
 }
 .poovu-img{
+    display: grid;
     padding: 90px;
     width: 300px;
     filter:grayscale(1);
@@ -235,4 +238,90 @@ i:hover{
 }
 .skill{
     margin-left: 15%;
+}
+@media (max-width:600px){
+
+.nav-bar{
+flex-direction: column;
+gap:10px;
+}
+
+.nav-section{
+width:100%;
+flex-direction:row;
+}
+
+.content-sec{
+flex-direction:column;
+text-align:center;
+margin-left:0;
+}
+
+.poovu-img{
+width:200px;
+padding:20px;
+}
+
+h1{
+font-size:32px;
+}
+
+p{
+font-size:16px;
+}
+
+.skill-section{
+justify-content:center;
+}
+
+.skill{
+margin-left:0;
+}
+.img-tr:hover img{
+    width: 200px;
+}
+
+.About{
+margin-left:5%;
+margin-right:5%;
+}
+
+.Eduction-sec{
+margin-left:5%;
+margin-right:5%;
+}
+
+}
+
+@media (min-width:601px) and (max-width:992px){
+
+.content-sec{
+flex-direction:column;
+text-align:center;
+margin-left:0;
+}
+
+.poovu-img{
+width:250px;
+padding:40px;
+}
+
+.skill-section{
+justify-content:center;
+}
+
+.skill{
+margin-left:0;
+}
+
+.About{
+margin-left:10%;
+margin-right:10%;
+}
+
+.Eduction-sec{
+margin-left:10%;
+margin-right:10%;
+}
+
 }
