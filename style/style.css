@@ -8,6 +8,11 @@ font-family: Arial, Helvetica, sans-serif;
 }
 html{
     scroll-behavior: smooth;
+    /* background: rgb(22,27,44); */
+}
+body {
+background-color: rgb(22, 27, 44) ;
+
 }
 
 .nav-bar{
