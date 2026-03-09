@@ -8,11 +8,11 @@ font-family: Arial, Helvetica, sans-serif;
 }
 html{
     scroll-behavior: smooth;
-    /* background: rgb(22,27,44); */
+    
 }
 body {
-background-color: rgb(22, 27, 44) ;
-
+background-color: rgb(22, 27, 44);
+overflow-x: hidden;
 }
 
 .nav-bar{
@@ -93,15 +93,17 @@ background-color: rgb(22, 27, 44) ;
     
 }
 .poovu-img{
-    display: grid;
+    display: flex;
     padding: 90px;
     width: 300px;
-    filter:grayscale(1);
+    filter:grayscale(100%) drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.9));
+    
     
 }
 .poovu-img:hover{
-filter: contrast(1);
-transition: 5s;
+ filter:drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.8)) contrast(1) ;
+transition: 1s;
+
 }
 .content
 {
@@ -154,16 +156,20 @@ i{
     padding: 20px;
     font-size: 30px;
     color: #ffffff;
+    
 }
 i:hover{
+    transition: 0.8s;
     color: #3b82f6;
+    transform: translateY(-3px);
 }
 .Eduction-sec{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
+    margin-top: 20%;
     margin-left: 20%;
     margin-right: 20%;
     border: 2px black;
@@ -172,17 +178,19 @@ i:hover{
     border-radius: 20px;
 }
 .img-tr img{
-    display: none;
+    display: block;
     padding-bottom: 20px;
     height: 0px;
+    width: 0px;
+     transition: 1s ease;
 }
 .img-tr:hover img{
     display:inline-block ;
     height: 150px;
     width: 300px;
-    animation: heightChange 1s ease;
+   
 }
-@keyframes heightChange {
+/* @keyframes heightChange {
     0%
     {
         height: 50px;
@@ -211,7 +219,7 @@ i:hover{
         height: 150px;
     }
     
-}
+} */
 .skill-border{
     display: flex;
     flex-direction: column;
@@ -223,17 +231,24 @@ i:hover{
     background:rgb(22, 27, 44) ;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
+    margin: 20px 20px 20px;
+}
+.skill-border:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
 .skil-space i{
     justify-content: space-between;
     font-size: 50px;
     padding-right: 50px;
 }
+.skil-space i:hover{
+    transform: translateY(-5px);
+}
 .skill-section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 50pxpx;
     margin-top: 10px;
 }
 .lang{
@@ -244,7 +259,7 @@ i:hover{
 .skill{
     margin-left: 15%;
 }
-@media (max-width:600px){
+@media(max-width:600px){
 
 .nav-bar{
 flex-direction: column;
@@ -295,6 +310,9 @@ margin-right:5%;
 margin-left:5%;
 margin-right:5%;
 }
+.footer-p p{
+    font-size: 20px;
+}
 
 }
 
@@ -318,7 +336,9 @@ justify-content:center;
 .skill{
 margin-left:0;
 }
-
+.footer-p p{
+    font-size: 20px;
+}
 .About{
 margin-left:10%;
 margin-right:10%;
@@ -328,5 +348,85 @@ margin-right:10%;
 margin-left:10%;
 margin-right:10%;
 }
+.nav-bar{
+flex-direction: column;
+gap:10px;
+}
 
+.nav-section{
+width:100%;
+flex-direction:row;
+}
+
+.content-sec{
+flex-direction:column;
+text-align:center;
+margin-left:0;
+}
+
+.poovu-img{
+width:200px;
+padding:20px;
+}
+
+
+}
+.con-tn{
+    display: flex;
+    
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.con-tn a{
+    color: #fafafb;
+    text-decoration: none;
+}
+.projects{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.project-card{
+    width:280px;
+    background:#020834;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project-card img{
+    width:100%;
+    border-radius:8px;
+}
+
+.project-card h3{
+    margin:15px 0;
+}
+
+.project-card p{
+    font-size:14px;
+}
+
+.project-card a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:rgb(22, 27, 44) ;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
 }
